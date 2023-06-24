@@ -32,19 +32,40 @@ int imagen4 =R.drawable.baseline_clean_hands_24;
         pokeB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("dowslog",String.valueOf(imagen1));
                 goSecontActivity(imagen1);
 
 
             }
         });
+        hearB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goSecontActivity(imagen2);
 
+            }
+        });
+
+        bunnyB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goSecontActivity(imagen3);
+            }
+        });
+
+        clearB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goSecontActivity(imagen4);
+            }
+        });
         exitB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finishAndRemoveTask();
             }
         });
+
+
 
     }
 
